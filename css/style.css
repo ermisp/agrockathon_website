@@ -1,0 +1,179 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=latin,greek);
+@import url(http://fonts.googleapis.com/css?family=Quicksand:700);
+
+
+html, body {
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
+	color: #798a1d;
+}
+
+h1{
+	font-size: 4rem;
+	font-family: 'Quicksand', sans-serif;
+	font-weight: 700;
+	color: #798a1d;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-family: 'Open Sans', sans-serif;	
+	font-size: 3rem;
+	color: #798a1d;
+}
+
+h3 {
+	font-family: 'Open Sans', sans-serif;	
+	font-size: 1.5rem;
+	color: #798a1d;
+}
+
+p{
+  font-size: 1rem;
+}
+
+.row {
+	padding-top: 4vh;
+}
+
+.button.green {
+	background-color: rgba(121,138,29,0.8);
+}
+
+.button.green:hover {
+	background-color: rgba(121,138,29,1);
+}
+
+.button.orange {
+	background-color: rgba(188,81,6,0.8);
+}
+
+.button.orange:hover {
+	background-color: rgba(121,138,29,1);
+}
+
+.single-page {
+	height: 100vh;
+}
+
+.bckg-white {
+	background-image:url('../assets/img/bckg-white.png');
+}
+
+.bckg-image-farmers-white {
+	background: url('../assets/img/bckg-image-farmers-white.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.height-100 {
+	height: 100%;
+}
+
+.height-40 {
+	height: 40%;
+}
+
+.height-30 {
+	height: 30%;
+}
+
+.height-20 {
+	height: 20%;
+}
+
+.height-10 {
+	height: 10%;
+}
+
+.height-5 {
+	height: 5%;
+}
+
+.dotted-border {
+    background-image:url('../assets/img/border-image.png');
+    border-image-repeat: repeat;
+    height: 5px;
+}
+
+.input-text {
+	border-style: none;
+	margin: 0 0 1.25rem;
+	position: relative;
+	text-decoration: none;
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	display: inline-block;
+	padding-top: 1rem;
+	padding-right: 2rem;
+	padding-bottom: 1.0625rem;
+	padding-left: 2rem;
+	font-size: 1rem;
+	background-color: rgba(121,138,29,0.2);
+	color: #798a1d;
+}
+
+.input-text:focus {
+	outline: none;
+    border-color: #798a1d;
+    box-shadow: 0 0 10px #798a1d;
+}
+
+::-webkit-input-placeholder {
+   color: #242424;
+   font-family: 'Open Sans', sans-serif;
+   opacity: 0.5;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #242424;
+   font-family: 'Open Sans', sans-serif;
+   opacity: 0.5;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #242424;
+   font-family: 'Open Sans', sans-serif;
+   opacity: 0.5; 
+}
+
+:-ms-input-placeholder {  
+   color: #242424;
+   font-family: 'Open Sans', sans-serif;
+   opacity: 0.5; 
+}
+
+@media only screen and (max-width: 40em) { 
+
+	html, body {
+		font-size: 9px;
+	}
+
+	.row {
+		padding-top: 3rem;
+	}
+
+}
+
+@media only screen and (max-width: 40em) and (orientation: landscape) { 
+
+	.row {
+		padding-top: 1rem;
+	}
+
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+
+	html, body {
+		font-size: 14px;
+	}
+
+	.row {
+		padding-top: 2.5rem;
+	}
+
+}
