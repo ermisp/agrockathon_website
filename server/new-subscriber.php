@@ -6,7 +6,7 @@
 
 	$result = $MailChimp->call('lists/subscribe', array(
 				'id'                => 'e2e7d840aa',
-                'email'             => array('email'=>'george.koulouris1@gmail.com'),
+                'email'             => array('email'=> $_POST["email"]),
                 'double_optin'      => false,
                 'update_existing'   => true,
                 'replace_interests' => false,

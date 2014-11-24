@@ -25,7 +25,7 @@ function listSubscribe() {
         dataType: "json",
         timeout: 10000,
         data: {
-            email: "g_koul@hotmail.com"
+            email: $('.input-text').val(),
         },
         beforeSend: function() {  
         	$("#email-input").animate({
