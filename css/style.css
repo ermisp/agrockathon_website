@@ -36,6 +36,10 @@ p{
 	padding-top: 4vh;
 }
 
+.button.green.disabled:hover {
+	background-color: rgba(121,138,29,0.8);
+}
+
 .button.green {
 	background-color: rgba(121,138,29,0.8);
 }
@@ -49,7 +53,7 @@ p{
 }
 
 .button.orange:hover {
-	background-color: rgba(121,138,29,1);
+	background-color: rgba(188,81,6,1);
 }
 
 .single-page {
@@ -119,6 +123,43 @@ p{
 	outline: none;
     border-color: #798a1d;
     box-shadow: 0 0 10px #798a1d;
+}
+
+.success {
+	background-color: rgba(121,138,29,0.2);
+	padding: 1rem;
+}
+
+.failure {
+	background-color: rgba(188,81,6,0.2);;
+	padding: 1rem;
+	color: rgb(188,81,6);
+}
+#email-failure {
+	display: none;
+}
+
+#email-waiting {
+	opacity: 0;
+	display: none;
+	overflow: hidden;
+}
+
+#email-success {
+	display: none;
+	opacity: 0;
+	padding-top: -5rem;
+}
+
+.fa-facebook {
+	padding-top: 3rem;
+	opacity: 0.6; 
+	cursor: pointer;
+	font-size: 8rem;
+}
+
+.fa-facebook:hover {
+	opacity: 1; 
 }
 
 ::-webkit-input-placeholder {

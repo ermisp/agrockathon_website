@@ -6,12 +6,12 @@
 
 	$result = $MailChimp->call('lists/subscribe', array(
 				'id'                => 'e2e7d840aa',
-                'email'             => array('email'=>'g_koul@hotmail.com'),
+                'email'             => array('email'=>'george.koulouris1@gmail.com'),
                 'double_optin'      => false,
                 'update_existing'   => true,
                 'replace_interests' => false,
-                'send_welcome'      => false,
+                'send_welcome'      => true,
             ));
 
-	print_r($result);
+	echo json_encode($result);
 ?>

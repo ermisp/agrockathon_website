@@ -34,16 +34,37 @@
 			<div class="row">
 				<div class="small-7 small-centered columns text-center"><h2>Θέλουμε να σας<br/>κρατάμε ενήμερους.</h2></div>
 			</div>
-			<div class="row">
+			<div class="row" id="email-waiting">
+				<div class="large-6 large-centered columns text-left">
+					<img src="assets/img/ajax-loader.gif" />
+				</div>
+			</div>
+			<div class="row" id="email-input">
 				<div class="large-12 large-centered columns text-center">
 					<div class="row collapse">
 						<div class="small-7 columns text-right">
 							<input class="input-text" type="text" placeholder="email">
 						</div>
 						<div class="small-5 columns text-left">
-							<div class="button postfix green" id="list-subscribe">Πάμε!</div>
+							<div class="button postfix green disabled" id="list-subscribe">...</div>
 						</div>
 					</div>
+				</div>
+			</div>
+			<div class="row" id="email-success">
+				<div class="large-6 large-centered columns text-center success">
+					Το Agrockathon σας ενδιαφέρει, είναι γεγονός. Θα σας ενημερώνουμε για όλα όσα συμβαίνουν μέσω email. Τσεκάρετε και το Facebook μας...!
+				</div>
+				<div class="large-12 large-centered columns text-center">
+					<a href="https://www.facebook.com/agrockathon" target="_blank"><h1><i class="fa fa-facebook"></i></h1></a>
+				</div>
+			</div>
+			<div class="row" id="email-failure">
+				<div class="large-6 large-centered columns text-center failure">
+					Οοοοοο.... Ειχαμε κάποιο πρόβλημα...! Παρακαλούμε ξαναπροσπαθήστε!
+				</div>
+				<div class="large-6 large-centered columns text-center">
+					<a href="http://agrockathon.eu" class="button expand orange">Πάμε πάλι...!</a></div>
 				</div>
 			</div>
 		<div>
@@ -57,7 +78,7 @@
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
 
 		  ga('create', 'UA-57040010-1', 'auto');
 		  ga('send', 'pageview');
