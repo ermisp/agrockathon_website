@@ -8,28 +8,41 @@ html, body {
 	color: #798a1d;
 }
 
+h1, h2, h3, h4 {
+	font-family: 'Open Sans', sans-serif;	
+	color: #798a1d;
+}
+
 h1{
 	font-size: 4rem;
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 700;
-	color: #798a1d;
 	text-transform: uppercase;
 }
 
 h2 {
-	font-family: 'Open Sans', sans-serif;	
 	font-size: 3rem;
-	color: #798a1d;
 }
 
 h3 {
-	font-family: 'Open Sans', sans-serif;	
 	font-size: 1.5rem;
-	color: #798a1d;
+}
+
+h4 {
+	font-size: 1.2rem;
 }
 
 p{
   font-size: 1rem;
+}
+
+a {
+	color: #fffff1;
+	opacity: 0.8;
+}
+
+a:hover {
+	color: rgba(188,81,6,1);;
 }
 
 .row {
@@ -159,6 +172,26 @@ p{
 }
 
 .fa-facebook:hover {
+	opacity: 1; 
+}
+
+.footer {
+	position: absolute;
+	background-color: #242424;
+	color: #fffff1;
+	margin: 0;
+	bottom: -100vh;
+	width: 100%;
+}
+
+.footer .row {
+	padding-top: 1rem;
+	padding-bottom: 1rem; 
+}
+
+.footer .fa-facebook {
+	font-size: 1rem;
+	padding-top: 0;
 	opacity: 1; 
 }
 
