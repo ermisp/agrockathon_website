@@ -40,6 +40,10 @@ a:hover {
 	color: rgba(188,81,6,1);;
 }
 
+h1w{
+	color: white;
+}
+
 .row {
 	padding-top: 4vh;
 }
