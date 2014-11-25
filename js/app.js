@@ -4,7 +4,8 @@ require.config({
 
     paths: {
         app: '../app',
-        vendor: 'vendor/'
+        vendor: 'vendor/',
+        foundationSrc: 'foundation'
     },
 
     shim: {
@@ -18,11 +19,21 @@ require.config({
         'foundation': {
             deps: ['vendor/modernizr', 'vendor/jquery'],
             exports: 'Foundation'
+        },
+        'foundation-topbar': {
+            deps: ['vendor/jquery', 'foundationSrc/foundation.topbar'],
+            exports: 'Foundation-topbar'
         }
     }
 });
 
-require(['vendor/jquery', 'backbone', 'app/router', 'foundation'], function ($, Backbone, Router) {
+require(['vendor/jquery', 'backbone', 'app/router'], function ($, Backbone, Router) {
     var router = new Router();
     Backbone.history.start();
+});
+
+require(['vendor/jquery', 'foundation'], function ($) {
+    jQuery(document).ready(function() { 
+        jQuery(this).foundation();
+    })
 });
