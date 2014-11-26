@@ -9,6 +9,7 @@ define(function (require) {
 
         /* All Home Views */
         homePage1View    = require('app/views/home/home-page1'),
+        homePage2View    = require('app/views/home/home-page2'),
 
         /* About Views */
         AboutView    = require('app/views/about/about');
@@ -24,7 +25,9 @@ define(function (require) {
 
         home: function () {
             var homePage1 = new homePage1View({el: $('.container')});
+            var homePage2 = new homePage2View({el: $('.container')});
             homePage1.render();
+            homePage2.render();
         },
 
         about: function() {
