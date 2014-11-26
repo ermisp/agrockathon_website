@@ -13,6 +13,7 @@ define(function (require) {
 
         /* Event Views */
         eventPage1View    = require('app/views/event/event-page1'),
+        eventPage2View    = require('app/views/event/event-page2'),
 
         /* About Views */
         AboutView    = require('app/views/about/about');
@@ -56,7 +57,9 @@ define(function (require) {
 
             /* Load the event page sections */
             var eventPage1 = new eventPage1View({el: $('.container')});
+            var eventPage2 = new eventPage2View({el: $('.container')});
             eventPage1.render();
+            eventPage2.render();
         }
 
     });

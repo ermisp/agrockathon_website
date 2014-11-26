@@ -39,8 +39,28 @@ a:hover {
 	color: rgba(188,81,6,1);;
 }
 
+h1.large-font {
+	font-size: 6rem;
+}
+
 h1.very-large-font {
-	font-size: 6em;
+	font-size: 15rem;
+}
+
+.white {
+	color: #fffff1;
+}
+
+.relative {
+	position: relative;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.bottom {
+	bottom: 0;
 }
 
 h1w{
@@ -72,6 +92,10 @@ h1w{
 	background-image:url('../assets/img/bckg-white.png');
 }
 
+.bckg-black {
+	background-image:url('../assets/img/bckg-black.png');
+}
+
 .bckg-ermis-george {
 	background-image:url('../assets/img/bckg-image-george_&_ermis.jpg');
 	background-repeat: no-repeat;
@@ -84,6 +108,14 @@ h1w{
 
 .bckg-image-farmers-white {
 	background: url('../assets/img/bckg-image-farmers-white.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.bckg-image-crete-white {
+	background: url('../assets/img/crete.jpg') no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.2"
+   width="50"
+   height="50"
+   id="svg3791"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="coder-logo.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1440"
+     inkscape:window-height="841"
+     id="namedview3181"
+     showgrid="false"
+     inkscape:zoom="4.72"
+     inkscape:cx="25"
+     inkscape:cy="25"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3791" />
+  <defs
+     id="defs3793" />
+  <metadata
+     id="metadata3796">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     style="fill:#798a1d;display:inline"
+     id="g3291"
+     transform="matrix(0.5,0,0,0.47941244,0,1.0327339)">
+    <polygon
+       style="fill:#798a1d"
+       id="polygon120"
+       points="97.768,94.986 100,94.986 100,92.755 100,86.494 100,84.262 97.768,84.262 57.754,84.262 55.52,84.262 55.52,86.494 55.52,92.755 55.52,94.986 57.754,94.986 " />
+    <polygon
+       style="fill:#798a1d"
+       id="polygon122"
+       points="39.666,5 36.42,6.652 1.221,24.567 0,25.187 0,26.556 0,31.371 0,32.743 1.224,33.363 36.422,51.2 39.666,52.843 39.666,49.207 39.666,44.077 39.666,42.704 38.44,42.084 12.396,28.925 38.44,15.765 39.666,15.146 39.666,13.772 39.666,8.642 " />
+    <polygon
+       style="fill:#798a1d"
+       id="polygon124"
+       points="38.674,94.986 40.11,94.986 40.705,93.68 79.791,8.161 81.234,5 77.76,5 71.244,5 69.813,5 69.215,6.304 30.126,91.825 28.681,94.986 32.158,94.986 " />
+  </g>
+</svg>
