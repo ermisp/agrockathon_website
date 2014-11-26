@@ -11,6 +11,9 @@ define(function (require) {
         homePage1View    = require('app/views/home/home-page1'),
         homePage2View    = require('app/views/home/home-page2'),
 
+        /* Event Views */
+        eventPage1View    = require('app/views/event/event-page1'),
+
         /* About Views */
         AboutView    = require('app/views/about/about');
 
@@ -20,10 +23,16 @@ define(function (require) {
 
         routes: {
             "": "home",
-            "about": "about"
+            "about": "about",
+            "event": "eventPage"
         },
 
         home: function () {
+            
+            /* Empty the page */
+            $('.container').html('');
+
+            /* Load the homepage sections */
             var homePage1 = new homePage1View({el: $('.container')});
             var homePage2 = new homePage2View({el: $('.container')});
             homePage1.render();
@@ -31,8 +40,23 @@ define(function (require) {
         },
 
         about: function() {
+
+            /* Empty the page */
+            $('.container').html('');
+
+            /* Load the about page sections */
             var about = new AboutView({el: $('.container')});
             about.render();
+        },
+
+        eventPage: function() {
+
+            /* Empty the page */
+            $('.container').html('');
+
+            /* Load the event page sections */
+            var eventPage1 = new eventPage1View({el: $('.container')});
+            eventPage1.render();
         }
 
     });
