@@ -16,7 +16,6 @@ h1{
 	font-size: 4rem;
 	font-family: 'Quicksand', sans-serif;
 	font-weight: 700;
-	text-transform: uppercase;
 }
 
 h2 {
@@ -50,11 +49,39 @@ h1w {
 
 h4w {
 	font-family: 'Open Sans', sans-serif;	
-	color: white;
+}
+
+h1.large-font {
+	font-size: 6rem;
+}
+
+h1.very-large-font {
+	font-size: 15rem;
+}
+
+.white {
+	color: #fffff1;
+}
+
+.relative {
+	position: relative;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.bottom {
+	bottom: 0;
 }
 
 .row {
 	padding-top: 4vh;
+}
+
+.row.bottom {
+	position: relative;
+	bottom: -30vh;
 }
 
 .button.green {
@@ -73,6 +100,10 @@ h4w {
 	background-image:url('../assets/img/bckg-white.png');
 }
 
+.bckg-black {
+	background-image:url('../assets/img/bckg-black.png');
+}
+
 .bckg-ermis-george {
 	background-image:url('../assets/img/bckg-image-george_&_ermis.jpg');
 	background-repeat: no-repeat;
@@ -83,8 +114,28 @@ h4w {
 	background-size: cover;
 }
 
+.bckg-image-farmers-white {
+	background: url('../assets/img/bckg-image-farmers-white.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.bckg-image-crete-white {
+	background: url('../assets/img/crete.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
 .height-100 {
 	height: 100%;
+}
+
+.width-100 {
+	width: 100%;
 }
 
 .height-40 {
@@ -96,6 +147,49 @@ h4w {
     border-image-repeat: repeat;
     height: 5px;
 }
+
+.vertical-center {
+	overflow: hidden;
+	height: 100%;
+}
+
+.text-shadow {
+	text-shadow: 1px 1px #fffff1;
+}
+
+#animated-text-2 {
+	visibility: hidden;
+	animation-delay:  5s;
+}
+
+.animated-text {
+	padding-top: 25vh;
+	position: absolute;
+	animation: fadeInOut 10s infinite;
+}
+
+@keyframes fadeInOut {
+  0% {
+  	visibility: visible;
+    opacity: 0;
+    transform: translate3d(0, -150%, 0);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate3d(0, 0%, 0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translate3d(0, 150%, 0);
+  }
+}
+
+.fadeInOut {
+  animation-name: fadeInOut;
+}
+
 
 @media only screen and (max-width: 40em) { 
 
