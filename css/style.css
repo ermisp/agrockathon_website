@@ -39,6 +39,11 @@ a:hover {
 	color: rgba(188,81,6,1);;
 }
 
+p {
+	margin-top: 1rem; 
+	margin-bottom: 1rem; 
+}
+
 h1w {
 	font-size: 4rem;
 	font-family: 'Quicksand', sans-serif;
@@ -80,6 +85,10 @@ h1.very-large-font {
 	padding-top: 4vh;
 }
 
+.small-margin-top {
+	margin-top: 3rem;
+}
+
 .row.bottom {
 	position: relative;
 	bottom: -30vh;
@@ -103,6 +112,10 @@ h1.very-large-font {
 
 .bckg-black {
 	background-image:url('../assets/img/bckg-black.png');
+}
+
+.bckg-purple {
+	background-image:url('../assets/img/bckg-purple.png');
 }
 
 .bckg-ermis-george {
@@ -131,12 +144,16 @@ h1.very-large-font {
 	background-size: cover;
 }
 
-.height-100 {
-	height: 100%;
-}
-
 .width-100 {
 	width: 100%;
+}
+
+.width-50 {
+	width: 50%;
+}
+
+.height-100 {
+	height: 100%;
 }
 
 .height-40 {
