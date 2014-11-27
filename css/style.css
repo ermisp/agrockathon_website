@@ -478,7 +478,7 @@ input[type="text"]:focus {
 	color: #fffff1;
 }
 
-.accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
+.accordion .accordion-navigation:hover > a, .accordion dd:hover > a {
 	opacity: 0.2;
 	color: #fffff1;
 }
