@@ -61,6 +61,14 @@ h1.large-font {
 	font-size: 6rem;
 }
 
+h3.large-font {
+	font-size: 2rem;
+}
+
+h3.very-large-font {
+	font-size: 2.5rem;
+}
+
 h1.very-large-font {
 	font-size: 15rem;
 	line-height: 0.7;
@@ -143,6 +151,10 @@ h1.very-large-font {
 	background-image:url('../assets/img/bckg-red.png');
 }
 
+.bckg-green {
+	background-image:url('../assets/img/bckg-green.png');
+}
+
 .bckg-ermis-george {
 	background-image:url('../assets/img/bckg-image-george_&_ermis.jpg');
 	background-repeat: no-repeat;
@@ -171,6 +183,14 @@ h1.very-large-font {
 
 .bckg-image-participate-white {
 	background: url('../assets/img/bckg-image-participate-white.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.bckg-image-groupwork-white {
+	background: url('../assets/img/bckg-image-groupwork-white.jpg') no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;

@@ -10,6 +10,7 @@ define(function (require) {
         /* All Home Views */
         homePage1View    = require('app/views/home/home-page1'),
         homePage2View    = require('app/views/home/home-page2'),
+        homePage3View    = require('app/views/home/home-page3'),
 
         /* Event Views */
         eventPage1View    = require('app/views/event/event-page1'),
@@ -39,8 +40,10 @@ define(function (require) {
             /* Load the homepage sections */
             var homePage1 = new homePage1View({el: $('.container')});
             var homePage2 = new homePage2View({el: $('.container')});
+            var homePage3 = new homePage3View({el: $('.container')});
             homePage1.render();
             homePage2.render();
+            homePage3.render();
         },
 
         about: function() {
