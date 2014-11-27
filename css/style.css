@@ -473,6 +473,21 @@ input[type="text"]:focus {
 	opacity: 1; 
 }
 
+.accordion .accordion-navigation > a, .accordion dd > a  {
+	background: none repeat scroll 0% rgba(121,138,29,0.7);
+	color: #fffff1;
+}
+
+.accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
+	opacity: 0.2;
+	color: #fffff1;
+}
+
+.accordion .accordion-navigation.active > a, .accordion dd.active > a {
+	background: none repeat scroll 0%;
+	color: #fffff1;
+}
+
 /****************** MEDIA QUERIES ******************/
 @media only screen and (max-width: 40em) { 
 

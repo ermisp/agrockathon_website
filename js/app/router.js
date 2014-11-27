@@ -22,6 +22,7 @@ define(function (require) {
         /* Load the participate sections */
         participatePage1View    = require('app/views/participate/participate-page1'),
         participatePage2View    = require('app/views/participate/participate-page2'),
+        participatePage3View    = require('app/views/participate/participate-page3'),
 
         /* About Views */
         AboutView    = require('app/views/about/about');
@@ -99,9 +100,11 @@ define(function (require) {
             /* Load the participate page sections */
             var participatePage1 = new participatePage1View({el: $('.container')});
             var participatePage2 = new participatePage2View({el: $('.container')});
+            var participatePage3 = new participatePage3View({el: $('.container')});
 
             participatePage1.render();
             participatePage2.render();
+            participatePage3.render();
         }
 
     });
