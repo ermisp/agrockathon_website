@@ -19,6 +19,9 @@ define(function (require) {
         eventPage4View    = require('app/views/event/event-page4'),
         eventPage5View    = require('app/views/event/event-page5'),
 
+        /* Load the participate sections */
+        participatePage1View    = require('app/views/participate/participate-page1'),
+
         /* About Views */
         AboutView    = require('app/views/about/about');
 
@@ -29,7 +32,8 @@ define(function (require) {
         routes: {
             "": "home",
             "about": "about",
-            "event": "eventPage"
+            "event": "eventPage",
+            "participate": "participate"
         },
 
         home: function () {
@@ -82,6 +86,19 @@ define(function (require) {
             eventPage3.render();
             eventPage4.render();
             eventPage5.render();
+        },
+
+        participate: function() {
+            /* Empty the page */
+            $('.container').html('');
+
+            /* Scroll to the top */
+            window.scrollTo(0, 0);
+
+            /* Load the participate page sections */
+            var participatePage1 = new participatePage1View({el: $('.container')});
+
+            participatePage1.render();
         }
 
     });
