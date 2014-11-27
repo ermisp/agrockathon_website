@@ -15,6 +15,8 @@ define(function (require) {
         eventPage1View    = require('app/views/event/event-page1'),
         eventPage2View    = require('app/views/event/event-page2'),
         eventPage3View    = require('app/views/event/event-page3'),
+        eventPage4View    = require('app/views/event/event-page4'),
+        eventPage5View    = require('app/views/event/event-page5'),
 
         /* About Views */
         AboutView    = require('app/views/about/about');
@@ -60,9 +62,14 @@ define(function (require) {
             var eventPage1 = new eventPage1View({el: $('.container')});
             var eventPage2 = new eventPage2View({el: $('.container')});
             var eventPage3 = new eventPage3View({el: $('.container')});
+            var eventPage4 = new eventPage4View({el: $('.container')});
+            var eventPage5 = new eventPage5View({el: $('.container')});
+
             eventPage1.render();
             eventPage2.render();
             eventPage3.render();
+            eventPage4.render();
+            eventPage5.render();
         }
 
     });

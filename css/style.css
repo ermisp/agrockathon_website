@@ -63,22 +63,42 @@ h1.large-font {
 
 h1.very-large-font {
 	font-size: 15rem;
+	line-height: 0.7;
+	margin-top: 3rem;
+}
+
+.button {
+	-webkit-opacity: 0.8;
+	-moz-opacity: 0.8;
+	opacity: 0.8;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.button:hover {
+	-webkit-opacity: 0.5;
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
 }
 
 .white {
 	color: #fffff1;
 }
 
-.relative {
-	position: relative;
+.background-green {
+	background-color: #798a1d;
 }
 
-.absolute {
-	position: absolute;
-}
-
-.bottom {
-	bottom: 0;
+.background-red {
+	background-color: #6c0000;
 }
 
 .row {
@@ -104,6 +124,7 @@ h1.very-large-font {
 
 .single-page {
 	height: 100vh;
+	overflow: hidden;
 }
 
 .bckg-white {
@@ -116,6 +137,10 @@ h1.very-large-font {
 
 .bckg-purple {
 	background-image:url('../assets/img/bckg-purple.png');
+}
+
+.bckg-red {
+	background-image:url('../assets/img/bckg-red.png');
 }
 
 .bckg-ermis-george {
@@ -144,6 +169,14 @@ h1.very-large-font {
 	background-size: cover;
 }
 
+.bckg-image-participate-white {
+	background: url('../assets/img/bckg-image-participate-white.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
 .width-100 {
 	width: 100%;
 }
@@ -154,6 +187,10 @@ h1.very-large-font {
 
 .height-100 {
 	height: 100%;
+}
+
+.height-60 {
+	height: 60%;
 }
 
 .height-40 {
@@ -167,8 +204,7 @@ h1.very-large-font {
 }
 
 .vertical-center {
-	overflow: hidden;
-	height: 100%;
+	margin-top: 45vh; 
 }
 
 .text-shadow {
