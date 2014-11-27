@@ -36,7 +36,8 @@ require.config({
             exports: '$'
         },
         'vendor/fastclick': {
-            deps: ['vendor/jquery']
+            deps: ['vendor/jquery'],
+            exports: 'Fastclick'
         }
     }
 });
@@ -51,7 +52,7 @@ require([   'vendor/jquery',
             'foundationSrc/foundation.reveal', 
             'foundationSrc/foundation.topbar',
             'vendor/modernizr',
-            'vendor/fastclick',
+            'vendor/fastclick'
         ], function ($) {
             jQuery(document).ready(function() { 
             jQuery(this).foundation();
