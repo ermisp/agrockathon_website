@@ -20,9 +20,23 @@ require.config({
             deps: ['vendor/modernizr', 'vendor/jquery'],
             exports: 'Foundation'
         },
-        'foundation-topbar': {
-            deps: ['vendor/jquery', 'foundationSrc/foundation.topbar'],
+        'vendor/modernizr': {
+            deps: ['vendor/jquery'],
+            exports: 'Modernizr'
+        },
+        'foundationSrc/foundation.topbar': {
+            deps: ['vendor/jquery', 'foundation'],
             exports: 'Foundation-topbar'
+        },
+        'foundationSrc/foundation.reveal': {
+            deps: ['vendor/jquery', 'foundation'],
+            exports: 'Foundation-reveal'
+        },
+        'vendor/jquery': {
+            exports: '$'
+        },
+        'vendor/fastclick': {
+            deps: ['vendor/jquery']
         }
     }
 });
@@ -32,8 +46,23 @@ require(['vendor/jquery', 'backbone', 'app/router'], function ($, Backbone, Rout
     Backbone.history.start();
 });
 
-require(['vendor/jquery', 'foundation'], function ($) {
-    jQuery(document).ready(function() { 
-        jQuery(this).foundation();
-    })
+require([   'vendor/jquery', 
+            'foundation', 
+            'foundationSrc/foundation.reveal', 
+            'foundationSrc/foundation.topbar',
+            'vendor/modernizr',
+            'vendor/fastclick',
+        ], function ($) {
+            jQuery(document).ready(function() { 
+            jQuery(this).foundation();
+        })
 });
+/*
+define([
+    'vendor/jquery',
+    'vendor/modernizr',
+    'foundation',
+    'foundationSrc/foundation.reveal'
+], function ($, Modernizr) {
+    jQuery(document).foundation();
+});*/

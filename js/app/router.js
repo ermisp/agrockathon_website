@@ -37,6 +37,9 @@ define(function (require) {
             /* Empty the page */
             $('.container').html('');
 
+            /* Scroll to the top */
+            window.scrollTo(0, 0);
+
             /* Load the homepage sections */
             var homePage1 = new homePage1View({el: $('.container')});
             var homePage2 = new homePage2View({el: $('.container')});
@@ -51,6 +54,9 @@ define(function (require) {
             /* Empty the page */
             $('.container').html('');
 
+            /* Scroll to the top */
+            window.scrollTo(0, 0);
+
             /* Load the about page sections */
             var about = new AboutView({el: $('.container')});
             about.render();
@@ -60,6 +66,9 @@ define(function (require) {
 
             /* Empty the page */
             $('.container').html('');
+
+            /* Scroll to the top */
+            window.scrollTo(0, 0);
 
             /* Load the event page sections */
             var eventPage1 = new eventPage1View({el: $('.container')});

@@ -101,6 +101,14 @@ h1.very-large-font {
 	color: #fffff1;
 }
 
+.greeen {
+	color: #798a1d;
+}
+
+.orange {
+	color: #bc5106;
+}
+
 .background-green {
 	background-color: #798a1d;
 }
@@ -262,6 +270,43 @@ h1.very-large-font {
 
 .fadeInOut {
   animation-name: fadeInOut;
+}
+
+.trigger-video:hover {
+	cursor: pointer;
+}
+
+.trigger-video:hover > .play-video {
+	opacity: 1;
+	margin-left: 3rem;
+
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.play-video {
+	opacity: 0.5;
+	margin-left: 0;
+
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.play-video:hover {
+	opacity: 1;
+	margin-left: 3rem;
+
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
 }
 
 
