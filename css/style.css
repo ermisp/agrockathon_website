@@ -478,14 +478,18 @@ input[type="text"]:focus {
 	color: #fffff1;
 }
 
-.accordion .accordion-navigation:hover > a, .accordion dd:hover > a {
-	opacity: 0.2;
+.accordion .accordion-navigation:hover > a, .accordion dd:hover > a  {
+	background: none repeat scroll 0% rgba(121,138,29,0.4);
 	color: #fffff1;
 }
 
 .accordion .accordion-navigation.active > a, .accordion dd.active > a {
-	background: none repeat scroll 0%;
+	background: none repeat scroll 0% rgba(121,138,29,0.4);
 	color: #fffff1;
+}
+
+.accordion .accordion-navigation > .content.active, .accordion dd > .content.active {
+	background: none
 }
 
 /****************** MEDIA QUERIES ******************/
