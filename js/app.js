@@ -58,12 +58,3 @@ require([   'vendor/jquery',
             jQuery(this).foundation();
         })
 });
-/*
-define([
-    'vendor/jquery',
-    'vendor/modernizr',
-    'foundation',
-    'foundationSrc/foundation.reveal'
-], function ($, Modernizr) {
-    jQuery(document).foundation();
-});*/
