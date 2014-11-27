@@ -1,6 +1,8 @@
+/****************** FONTS ******************/
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600&subset=latin,greek);
 @import url(http://fonts.googleapis.com/css?family=Quicksand:700);
 
+/****************** BASIC ELEMENTS ******************/
 html, body {
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
@@ -44,6 +46,11 @@ p {
 	margin-bottom: 1rem; 
 }
 
+.single-page {
+	height: 100vh;
+	overflow: hidden;
+}
+
 h1w {
 	font-size: 4rem;
 	font-family: 'Quicksand', sans-serif;
@@ -75,62 +82,8 @@ h1.very-large-font {
 	margin-top: 3rem;
 }
 
-.button {
-	-webkit-opacity: 0.8;
-	-moz-opacity: 0.8;
-	opacity: 0.8;
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-ms-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
-}
-
-.button:hover {
-	-webkit-opacity: 0.5;
-	-moz-opacity: 0.5;
-	opacity: 0.5;
-	-webkit-transition: all 1s ease;
-	-moz-transition: all 1s ease;
-	-ms-transition: all 1s ease;
-	-o-transition: all 1s ease;
-	transition: all 1s ease;
-}
-
-.white {
-	color: #fffff1;
-}
-
-.greeen {
-	color: #798a1d;
-}
-
-.orange {
-	color: #bc5106;
-}
-
-.black {
-	color: #242424;
-}
-
-.opacity-80 {
-	opacity: 0.8;
-}
-
-.background-green {
-	background-color: #798a1d;
-}
-
-.background-red {
-	background-color: #6c0000;
-}
-
 .row {
 	padding-top: 4vh;
-}
-
-.small-margin-top {
-	margin-top: 3rem;
 }
 
 .row.bottom {
@@ -138,18 +91,7 @@ h1.very-large-font {
 	bottom: -30vh;
 }
 
-.button.green {
-	background-color: rgba(121,138,29,0.8);
-}
-
-.button.green:hover {
-	background-color: rgba(121,138,29,1);
-}
-
-.single-page {
-	height: 100vh;
-	overflow: hidden;
-}
+/****************** BACKGROUNDS ******************/
 
 .bckg-white {
 	background-image:url('../assets/img/bckg-white.png');
@@ -165,6 +107,14 @@ h1.very-large-font {
 
 .bckg-red {
 	background-image:url('../assets/img/bckg-red.png');
+}
+
+.background-green {
+	background-color: #798a1d;
+}
+
+.background-red {
+	background-color: #6c0000;
 }
 
 .bckg-green {
@@ -213,6 +163,39 @@ h1.very-large-font {
 	background-size: cover;
 }
 
+/****************** BUTTONS ******************/
+.button {
+	-webkit-opacity: 0.8;
+	-moz-opacity: 0.8;
+	opacity: 0.8;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.button:hover {
+	-webkit-opacity: 0.5;
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+	-webkit-transition: all 1s ease;
+	-moz-transition: all 1s ease;
+	-ms-transition: all 1s ease;
+	-o-transition: all 1s ease;
+	transition: all 1s ease;
+}
+
+.button.green {
+	background-color: rgba(121,138,29,0.8);
+}
+
+.button.green:hover {
+	background-color: rgba(121,138,29,1);
+}
+
+/****************** WIDTH, HEIGHT, OPACITY & MARGIN CLASSES ******************/
+
 .width-100 {
 	width: 100%;
 }
@@ -233,18 +216,45 @@ h1.very-large-font {
 	height: 40%;
 }
 
-.dotted-border {
-    background-image:url('../assets/img/border-image.png');
-    border-image-repeat: repeat;
-    height: 5px;
+.small-margin-top {
+	margin-top: 3rem;
 }
 
 .vertical-center {
 	margin-top: 45vh; 
 }
 
+.opacity-80 {
+	opacity: 0.8;
+}
+
+/****************** TEXT EFFECTS ******************/
 .text-shadow {
 	text-shadow: 1px 1px #fffff1;
+}
+
+.white {
+	color: #fffff1;
+}
+
+.greeen {
+	color: #798a1d;
+}
+
+.orange {
+	color: #bc5106;
+}
+
+.black {
+	color: #242424;
+}
+
+/****************** BORDERS ******************/
+
+.dotted-border {
+    background-image:url('../assets/img/border-image.png');
+    border-image-repeat: repeat;
+    height: 5px;
 }
 
 /****************** ANIMATIONS ******************/
