@@ -339,12 +339,12 @@ a.green {
 	}
 }
 
-#fade-in-left-1 {
+.fade-in-left-1 {
 	animation: fadeInLeft 3s;
 	-webkit-animation: fadeInLeft 3s;
 }
 
-#fade-in-left-2 {
+.fade-in-left-2 {
 	animation: fadeInLeft 5s;
 	-webkit-animation: fadeInLeft 5s;
 }
@@ -374,14 +374,49 @@ a.green {
 	}
 }
 
-#fade-in-right-1 {
+.fade-in-right-1 {
 	animation: fadeInRight 3s;
 	-webkit-animation: fadeInRight  3s;
 }
 
-#fade-in-right-2 {
+.fade-in-right-2 {
 	animation: fadeInRight 5s;
 	-webkit-animation: fadeInRight  5s;
+}
+
+/* For Chrome */
+@-webkit-keyframes fadeInBottom {
+	0% {
+		opacity: 0;
+		transform: translate3d(0, 100%, 0);
+	}
+
+	100% {
+		opacity: 0.8;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes fadeInBottom {
+	0% {
+		opacity: 0;
+		transform: translate3d(0, 100%, 0);
+	}
+
+	100% {
+		opacity: 0.8;
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+.fade-in-bottom-1 {
+	animation: fadeInBottom 5s;
+	-webkit-animation: fadeInBottom  5s;
+}
+
+.fade-in-bottom-2 {
+	animation: fadeInBottom 5s;
+	-webkit-animation: fadeInBottom 5s;
 }
 
 /****************** TEXT BOXES & INPUTS ****************/
