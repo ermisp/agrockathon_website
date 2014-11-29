@@ -1,10 +1,11 @@
 define(function (require) {
 
-    var $                   = require('jquery'),
-        _                   = require('underscore'),
-        Backbone            = require('backbone'),
-        Foundation          = require('foundation'),
-        tpl                 = require('text!app/views/participate/participate-page3.html'),
+    var $                       = require('jquery'),
+        _                       = require('underscore'),
+        Backbone                = require('backbone'),
+        Foundation              = require('foundation'),
+        //FoundationAcc           = require('foundationSrc/foundation.accordion'),
+        tpl                     = require('text!app/views/participate/participate-page3.html'),
 
         template = _.template(tpl);
 

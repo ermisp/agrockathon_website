@@ -4,7 +4,7 @@ define(function (require) {
         _                   = require('underscore'),
         Backbone            = require('backbone'),
         Foundation          = require('foundation'),
-        FoundationReveal    = require('foundationSrc/foundation.reveal'),
+        //FoundationReveal    = require('foundationSrc/foundation.reveal'),
         tpl                 = require('text!app/views/home/home-page1.html'),
 
         template = _.template(tpl);

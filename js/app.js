@@ -13,6 +13,10 @@ require.config({
             deps: ['underscore', 'vendor/jquery'],
             exports: 'Backbone'
         },
+        'app/router': {
+            deps: ['backbone'],
+            exports: 'Router'
+        },
         'underscore': {
             exports: '_'
         },
@@ -25,12 +29,16 @@ require.config({
             exports: 'Modernizr'
         },
         'foundationSrc/foundation.topbar': {
-            deps: ['vendor/jquery', 'foundation'],
+            deps: ['foundation'],
             exports: 'Foundation-topbar'
         },
         'foundationSrc/foundation.reveal': {
-            deps: ['vendor/jquery', 'foundation'],
+            deps: ['foundation'],
             exports: 'Foundation-reveal'
+        },
+        'foundationSrc/foundation.accordion': {
+            deps: ['foundation'],
+            exports: 'Foundation-accordion'
         },
         'vendor/jquery': {
             exports: '$'
@@ -38,23 +46,19 @@ require.config({
         'vendor/fastclick': {
             deps: ['vendor/jquery'],
             exports: 'Fastclick'
-        }
+        },
     }
 });
 
 require(['vendor/jquery', 'backbone', 'app/router'], function ($, Backbone, Router) {
-    var router = new Router();
+    router = new Router();
     Backbone.history.start();
 });
 
-require([   'vendor/jquery', 
-            'foundation', 
+require([   'vendor/fastclick',
+            'foundation',
+            'app/router', 
             'foundationSrc/foundation.reveal', 
             'foundationSrc/foundation.topbar',
-            'vendor/modernizr',
-            'vendor/fastclick'
-        ], function ($) {
-            jQuery(document).ready(function() { 
-            jQuery(this).foundation();
-        })
-});
+            'foundationSrc/foundation.accordion'
+        ]);

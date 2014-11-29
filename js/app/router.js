@@ -53,6 +53,8 @@ define(function (require) {
             homePage1.render();
             homePage2.render();
             homePage3.render();
+
+            this.loadFoundation();
         },
 
         about: function() {
@@ -105,6 +107,14 @@ define(function (require) {
             participatePage1.render();
             participatePage2.render();
             participatePage3.render();
+
+            this.loadFoundation();
+        },
+
+        loadFoundation: function() {
+            $(document).ready(function() { 
+                $(this).foundation();
+            })
         }
 
     });
