@@ -26,6 +26,9 @@ define(function (require) {
         /* About Views */
         AboutView    = require('app/views/about/about');
 
+        /* Blog View */
+        BlogView    = require('app/views/blog/blog');
+
     header.render();
 
     return Backbone.Router.extend({
@@ -34,7 +37,8 @@ define(function (require) {
             "": "home",
             "about": "about",
             "event": "eventPage",
-            "participate": "participate"
+            "participate": "participate",
+            "blog":"blog",
         },
 
         home: function () {
@@ -106,6 +110,20 @@ define(function (require) {
             participatePage2.render();
 
             this.loadFoundation();
+        },
+
+        blog: function() {
+            /* Empty the page */
+            $('.container').html('');
+
+            /* Scroll to the top */
+            window.scrollTo(0, 0);
+
+            /* Load the participate page sections */
+            var blog = new BlogView({el: $('.container')});
+
+            blog.render();
+            
         },
 
         loadFoundation: function() {
