@@ -210,6 +210,10 @@ h1.very-large-font {
 	height: 100%;
 }
 
+.height-90 {
+	height: 90%;
+}
+
 .height-60 {
 	height: 60%;
 }
@@ -529,6 +533,16 @@ input[type="text"]:focus {
 
 .accordion .accordion-navigation > .content.active, .accordion dd > .content.active {
 	background: none
+}
+
+.top-bar {
+	background-color: rgba(36, 36, 36, 0.8);
+}
+
+.top-bar-section ul li, .top-bar-section li:not(.has-form) a:not(.button) {
+	background-color: rgba(36, 36, 36, 0);
+	color: #fffff1;
+	font-size: 1rem;
 }
 
 /****************** MEDIA QUERIES ******************/
