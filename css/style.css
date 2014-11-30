@@ -109,6 +109,10 @@ h1.very-large-font {
 	background-image:url('../assets/img/bckg-red.png');
 }
 
+.bckg-brown {
+	background-image:url('../assets/img/bckg-brown.png');
+}
+
 .background-green {
 	background-color: #798a1d;
 }
@@ -220,6 +224,15 @@ h1.very-large-font {
 
 .height-40 {
 	height: 40%;
+}
+
+.zero-margin-top {
+	margin-top: 0rem;
+	padding-top: 0;
+}
+
+.tiny-margin-top {
+	margin-top: 1rem;
 }
 
 .small-margin-top {

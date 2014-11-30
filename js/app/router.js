@@ -28,7 +28,8 @@ define(function (require) {
         whatPage2View    = require('app/views/hackathon/what-page2'),
 
         /* About Views */
-        AboutView    = require('app/views/about/about');
+        AboutPage1View    = require('app/views/about/about-page1');
+        AboutPage2View    = require('app/views/about/about-page2');
 
         /* Blog View */
         BlogView    = require('app/views/blog/blog');
@@ -98,8 +99,10 @@ define(function (require) {
             header.setActive();
 
             /* Load the about page sections */
-            var about = new AboutView({el: $('.container')});
-            about.render();
+            var aboutPage1 = new AboutPage1View({el: $('.container')});
+            var aboutPage2 = new AboutPage2View({el: $('.container')});
+            aboutPage1.render();
+            aboutPage2.render();
         },
 
         eventPage: function() {
