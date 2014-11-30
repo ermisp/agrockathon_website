@@ -281,17 +281,40 @@ a.green {
 }
 
 /****************** ANIMATIONS ******************/
-#animated-text-2 {
-	visibility: hidden;
-	animation-delay:  5s;
-	-webkit-animation-delay:  5s;
+
+.animation-fade-up {
+	animation: fadeIn 3s;
+	-webkit-animation: fadeIn  3s;
 }
 
-.animated-text {
+#animation-element-1 {
 	padding-top: 25vh;
 	position: absolute;
-	animation: fadeInOut 10s infinite;
-	-webkit-animation: fadeInOut  10s infinite;
+}
+
+/* For Chrome */
+@-webkit-keyframes fadeIn {
+	0% {
+		opacity: 0;
+		transform: translate3d(0, 800%, 0);
+	}
+
+	100% {
+		opacity: 0.8;
+		transform: translate3d(0, 0%, 0);
+	}
+} 
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translate3d(0, 800%, 0);
+  }
+
+  100% {
+    opacity: 0.8;
+    transform: translate3d(0, 0%, 0);
+  }
 }
 
 /* For Chrome */
