@@ -49,6 +49,9 @@ define(function (require) {
             /* Scroll to the top */
             window.scrollTo(0, 0);
 
+            /* Set the correct active element in the menu */
+            header.setActive();
+
             /* Load the homepage sections */
             var homePage1 = new homePage1View({el: $('.container')});
             var homePage2 = new homePage2View({el: $('.container')});
@@ -68,6 +71,9 @@ define(function (require) {
             /* Scroll to the top */
             window.scrollTo(0, 0);
 
+            /* Set the correct active element in the menu */
+            header.setActive();
+
             /* Load the about page sections */
             var about = new AboutView({el: $('.container')});
             about.render();
@@ -80,6 +86,9 @@ define(function (require) {
 
             /* Scroll to the top */
             window.scrollTo(0, 0);
+
+            /* Set the correct active element in the menu */
+            header.setActive();
 
             /* Load the event page sections */
             var eventPage1 = new eventPage1View({el: $('.container')});
@@ -102,6 +111,9 @@ define(function (require) {
             /* Scroll to the top */
             window.scrollTo(0, 0);
 
+            /* Set the correct active element in the menu */
+            header.setActive();
+
             /* Load the participate page sections */
             var participatePage1 = new participatePage1View({el: $('.container')});
             var participatePage2 = new participatePage2View({el: $('.container')});
@@ -118,6 +130,9 @@ define(function (require) {
 
             /* Scroll to the top */
             window.scrollTo(0, 0);
+
+            /* Set the correct active element in the menu */
+            header.setActive();
 
             /* Load the participate page sections */
             var blog = new BlogView({el: $('.container')});
