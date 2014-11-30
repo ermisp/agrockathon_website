@@ -25,6 +25,7 @@ define(function (require) {
 
         /* Load the what sections */
         whatPage1View    = require('app/views/hackathon/what-page1'),
+        whatPage2View    = require('app/views/hackathon/what-page2'),
 
         /* About Views */
         AboutView    = require('app/views/about/about');
@@ -78,9 +79,11 @@ define(function (require) {
             /* Set the correct active element in the menu */
             header.setActive();
 
+            /* Load the sections */
             var whatPage1 = new whatPage1View({el: $('.container')});
-
+            var whatPage2 = new whatPage2View({el: $('.container')});
             whatPage1.render();
+            whatPage2.render();
         },
 
         about: function() {
