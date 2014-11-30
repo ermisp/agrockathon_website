@@ -38,6 +38,7 @@ define(function (require) {
             "about": "about",
             "event": "eventPage",
             "participate": "participate",
+            "faq": "faq",
             "blog":"blog",
         },
 
@@ -139,6 +140,23 @@ define(function (require) {
 
             blog.render();
             
+        },
+
+        faq: function() {
+            /* Empty the page */
+            $('.container').html('');
+
+            /* Scroll to the top */
+            window.scrollTo(0, 0);
+
+            /* Set the correct active element in the menu */
+            header.setActive();
+
+            var participatePage2 = new participatePage2View({el: $('.container')});
+
+            participatePage2.render();
+
+            this.loadFoundation();
         },
 
         loadFoundation: function() {

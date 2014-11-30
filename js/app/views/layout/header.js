@@ -18,11 +18,14 @@ define(function (require) {
 
         setActive: function() {
 
-            if ( typeof previousActive !== 'undefined' )
-                $('.' + previousActive + '-btn').removeClass('active');
+            var clickedItem = $("[href='#" + Backbone.history.fragment +"']");
 
-            $('.' + Backbone.history.fragment + '-btn').addClass('active');
-            previousActive = Backbone.history.fragment;
+            if ( typeof previousActive !== 'undefined' )
+                $(previousActive).parent().removeClass('active');
+
+            $(clickedItem).parent().addClass('active');
+            previousActive = clickedItem;
+
         }
 
     });
