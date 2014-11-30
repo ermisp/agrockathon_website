@@ -23,6 +23,9 @@ define(function (require) {
         participatePage1View    = require('app/views/participate/participate-page1'),
         participatePage2View    = require('app/views/participate/participate-page2'),
 
+        /* Load the what sections */
+        whatPage1View    = require('app/views/hackathon/what-page1'),
+
         /* About Views */
         AboutView    = require('app/views/about/about');
 
@@ -40,6 +43,7 @@ define(function (require) {
             "participate": "participate",
             "faq": "faq",
             "blog":"blog",
+            "what":"what"
         },
 
         home: function () {
@@ -62,6 +66,21 @@ define(function (require) {
             homePage3.render();
 
             this.loadFoundation();
+        },
+
+        what: function() {
+            /* Empty the page */
+            $('.container').html('');
+
+            /* Scroll to the top */
+            window.scrollTo(0, 0);
+
+            /* Set the correct active element in the menu */
+            header.setActive();
+
+            var whatPage1 = new whatPage1View({el: $('.container')});
+
+            whatPage1.render();
         },
 
         about: function() {
