@@ -6,8 +6,19 @@ define(function (require) {
 
     return Backbone.Model.extend({
 
-    	
+        defaults: {
+            id:"",
+            title:"",
+            body:"",
+            media:"",
+            date: ""
+        },
 
+        url: '../../server/get-inspirations.php',
+
+        initialize: function() {
+            console.log(this.url);
+        }
     });
 
 });

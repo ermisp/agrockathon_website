@@ -10,13 +10,13 @@
 
 	function fetch() {
 
-		$servername = "";
-		$username = "";
-		$password = "";
-		$database = "";
+		$servername = "localhost";
+		$username = "agrockathon";
+		$password = "pass";
+		$database = "agrockatjq_db";
 
 		$pdo=new PDO('mysql:dbname='.$database.';host='.$servername,$username,$password);
-        $sql = "SELECT title, body, media FROM inspirations ORDER BY date DESC";
+        $sql = "SELECT id, title, body, media FROM inspirations ORDER BY date DESC";
         
         $statement=$pdo->prepare($sql);
         $statement->execute();

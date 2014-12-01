@@ -5,17 +5,12 @@ define(function (require) {
         Backbone            = require('backbone');
 
     return Backbone.Collection.extend({
-    	url: '../../server/get-inspirations.pp',
+    	url: '../../server/get-inspirations.php',
 
     	initialize: function() {
-    		that = this;
-			this.fetch({
-      			success: function(model, data){
-        			that.set();
-        			that.set();
-				}
-			});
-		},
+            this.fetch();
+        }
+    		
     });
 
 });
