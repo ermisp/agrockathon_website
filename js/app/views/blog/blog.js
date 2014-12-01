@@ -14,7 +14,7 @@ define(function (require) {
         render: function () {
 
             /*Define the articles */
-            var article = new singleArticle({el: $('.articles')});
+            //var article = new singleArticle({el: $('.articles')});
 
             this.$el.append(template());
             return this;

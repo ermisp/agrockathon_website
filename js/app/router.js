@@ -35,6 +35,10 @@ define(function (require) {
         /* Blog View */
         BlogView    = require('app/views/blog/blog');
 
+        /* Blog Collection */
+        inspirationModel    = require('app/inspiration-model');
+        inspirationCollection = require('app/inspiration-collection');
+
     header.render();
 
     return Backbone.Router.extend({
@@ -162,6 +166,10 @@ define(function (require) {
 
             /* Set the correct active element in the menu */
             header.setActive();
+
+            /* Get the inspirations from the db */
+            var inspiration = new inspirationModel();
+            var inspirations = new inspirationModel({model: inspiration});
 
             /* Load the participate page sections */
             var blog = new BlogView({el: $('.container')});

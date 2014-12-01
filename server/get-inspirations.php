@@ -1,31 +1,27 @@
 <?php
-	$servername = "";
-	$username = "";
-	$password = "";
-	$database = "";
+
+	switch($_SERVER['REQUEST_METHOD']){
+
+        case 'GET':
+	        fetch();
+	        break;
+    }
 
 
-	if (!$link = mysql_connect($servername, $username, $password)) {
-	    echo 'Could not connect to mysql';
-	    exit;
-	}
+	function fetch() {
 
-	if (!mysql_select_db($database, $link)) {
-	    echo 'Could not select database';
-	    exit;
-	}
+		$servername = "";
+		$username = "";
+		$password = "";
+		$database = "";
 
-	$sql    = 'SELECT title, body, media FROM inspirations ORDER BY date DESC';
-	$result = mysql_query($sql, $link);
-
-	if (!$result) {
-	    echo "DB Error, could not query the database\n";
-	    echo 'MySQL Error: ' . mysql_error();
-	    exit;
-	}
-
-	while ($row = mysql_fetch_assoc($result)) {
-	    print_r($row);
+		$pdo=new PDO('mysql:dbname='.$database.';host='.$servername,$username,$password);
+        $sql = "SELECT title, body, media FROM inspirations ORDER BY date DESC";
+        
+        $statement=$pdo->prepare($sql);
+        $statement->execute();
+        $results=$statement->fetchAll(PDO::FETCH_ASSOC);
+        die(json_encode($results));
 	}
 
 ?>
