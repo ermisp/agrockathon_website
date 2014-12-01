@@ -16,7 +16,24 @@ define(function (require) {
         },
 
         render: function () {
-            this.$el.append(template());
+            this.$el.append(template()); 
+
+            /* Make sure the height is ok */
+            var ermisHeight = ($("#ermis").height() + ( $("#ermis-cv-onRecord").height() > $("#ermis-cv-offRecord").height() ? $("#ermis-cv-onRecord").height() : $("#ermis-cv-offRecord").height()));
+            var georgeHeight = ($("#george").height() + ( $("#george-cv-onRecord").height() > $("#george-cv-offRecord").height() ? $("#george-cv-onRecord").height() : $("#george-cv-offRecord").height()));
+
+
+            /* Check if we're on desktop or tablet */
+            console.log($(".bckg-ermis-george").css("color"));
+            if ($(".bckg-ermis-george").css("color") == 'rgb(255, 0, 0)') {
+                $(".leave-george-margin").css('padding-top', 0.8*ermisHeight);
+                var totalHeight = 1.5*ermisHeight + georgeHeight;
+            }
+            else
+                var totalHeight = 1.5*(ermisHeight > georgeHeight ? ermisHeight : georgeHeight);
+
+            $(".bckg-ermis-george").height(totalHeight);
+
             return this;
         },
 
