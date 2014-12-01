@@ -591,6 +591,14 @@ input[type="text"]:focus {
     background: none repeat scroll 0% 0% #242424;
 }
 
+#videoModal {
+	visibility: hidden; 
+	display: block; 
+	top: 3rem; 
+	opacity: 0;
+	height: 70vh
+}
+
 /****************** MEDIA QUERIES ******************/
 @media only screen and (max-width: 40em) { 
 
@@ -624,6 +632,19 @@ input[type="text"]:focus {
 		height: 4rem;
 		font-size: 1.5rem;
 		padding-top: 1rem;
+	}
+
+	.reveal-modal, dialog {
+		min-height: 50vh;
+		padding-top: 5rem;
+	}
+
+	#videoModal {
+		visibility: hidden; 
+		display: block; 
+		top: 3rem; 
+		opacity: 0;
+		height: 50vh;
 	}
 
 }
