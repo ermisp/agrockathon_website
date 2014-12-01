@@ -247,6 +247,16 @@ h1.very-large-font {
 	opacity: 0.8;
 }
 
+/****************** POSITIONNING ******************/
+
+.relative-position {
+	position: relative;
+}
+
+.absolute-position {
+	position: absolute;
+}
+
 /****************** TEXT EFFECTS ******************/
 .text-shadow {
 	text-shadow: 1px 1px #fffff1;
@@ -256,12 +266,16 @@ h1.very-large-font {
 	color: #fffff1;
 }
 
-.greeen {
+.green {
 	color: #798a1d;
 }
 
 .orange {
 	color: #bc5106;
+}
+
+.blue {
+	color: #008CBA;
 }
 
 .black {
@@ -281,16 +295,6 @@ a.green {
 }
 
 /****************** ANIMATIONS ******************/
-
-.animation-fade-up {
-	animation: fadeIn 3s;
-	-webkit-animation: fadeIn  3s;
-}
-
-#animation-element-1 {
-	padding-top: 25vh;
-	position: absolute;
-}
 
 /* For Chrome */
 @-webkit-keyframes fadeIn {
@@ -317,42 +321,16 @@ a.green {
   }
 }
 
-/* For Chrome */
-@-webkit-keyframes fadeInOut {
-	0% {
-		visibility: visible;
-		opacity: 0;
-		transform: translate3d(0, -150%, 0);
-	}
-
-	50% {
-		opacity: 0.8;
-		transform: translate3d(0, 0%, 0);
-	}
-
-	100% {
-		opacity: 0;
-		transform: translate3d(0, 150%, 0);
-	}
-} 
-
-@keyframes fadeInOut {
-  0% {
-  	visibility: visible;
-    opacity: 0;
-    transform: translate3d(0, -150%, 0);
-  }
-
-  50% {
-    opacity: 0.8;
-    transform: translate3d(0, 0%, 0);
-  }
-
-  100% {
-    opacity: 0;
-    transform: translate3d(0, 150%, 0);
-  }
+.animation-fade-up {
+	animation: fadeIn 3s;
+	-webkit-animation: fadeIn  3s;
 }
+
+#animation-element-1 {
+	padding-top: 25vh;
+	position: absolute;
+}
+
 
 /* For Chrome */
 @-webkit-keyframes fadeInLeft {
@@ -595,6 +573,22 @@ input[type="text"]:focus {
 	background: none repeat scroll 0% 0% rgba(36, 36, 36, 0.8);
 	color: #fffff1;
 	font-size: 1rem;
+}
+
+.switch.round label { 
+	color: #fffff1;
+}
+
+#ermis-cv-onRecord {
+	opacity: 0;
+}
+
+#george-cv-onRecord {
+	opacity: 0;
+}
+
+.switch input:checked + label {
+    background: none repeat scroll 0% 0% #242424;
 }
 
 /****************** MEDIA QUERIES ******************/
