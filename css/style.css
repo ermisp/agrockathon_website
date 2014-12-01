@@ -615,6 +615,17 @@ input[type="text"]:focus {
 		color: #F00;
 	}
 
+	input[type="text"] {
+		height: 4rem;
+		font-size: 1.5rem;
+	}
+
+	.button.green {
+		height: 4rem;
+		font-size: 1.5rem;
+		padding-top: 1rem;
+	}
+
 }
 
 @media only screen and (max-width: 40em) and (orientation: landscape) { 
