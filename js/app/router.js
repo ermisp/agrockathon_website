@@ -33,7 +33,7 @@ define(function (require) {
         AboutPage2View    = require('app/views/about/about-page2');
 
         /* Blog View */
-        //BlogView    = require('app/views/blog/blog');
+        BlogView    = require('app/views/blog/blog');
 
         /* Blog Collection */
         inspirationModel    = require('app/inspiration-model');
@@ -169,9 +169,12 @@ define(function (require) {
 
             /* Get the inspirations from the db */
             var inspiration = new inspirationModel();
-            var inspirations = new inspirationCollection({model: inspiration});
+            var inspirations = new inspirationCollection({models: inspiration});
 
-            console.log(inspirations.models);
+            /* Create the blog view */
+            var blog = new BlogView({el: $('.container'), collection: inspirations});
+            blog.render();
+            
             
         },
 

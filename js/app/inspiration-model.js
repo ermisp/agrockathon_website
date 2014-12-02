@@ -14,11 +14,7 @@ define(function (require) {
             date: ""
         },
 
-        url: '../../server/get-inspirations.php',
-
-        initialize: function() {
-            console.log(this.url);
-        }
+        url: 'server/get-inspirations.php',
     });
 
 });

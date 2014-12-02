@@ -11,7 +11,7 @@ define(function (require) {
     return Backbone.View.extend({
 
         render: function () {
-
+            console.log(this.collection.models);
             this.$el.append(template());
             return this;
         }

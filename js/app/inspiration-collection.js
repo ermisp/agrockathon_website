@@ -5,7 +5,7 @@ define(function (require) {
         Backbone            = require('backbone');
 
     return Backbone.Collection.extend({
-    	url: '../../server/get-inspirations.php',
+    	url: 'server/get-inspirations.php',
 
     	initialize: function() {
             this.fetch();
