@@ -6,10 +6,6 @@ define(function (require) {
 
     return Backbone.Collection.extend({
     	url: 'server/get-inspirations.php',
-
-    	initialize: function() {
-            this.fetch();
-        }
     		
     });
 

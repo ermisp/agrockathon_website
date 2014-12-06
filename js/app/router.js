@@ -135,6 +135,8 @@ define(function (require) {
             eventPage3.render();
             eventPage4.render();
             eventPage5.render();
+
+            this.loadFoundation();
         },
 
         participate: function() {
@@ -171,11 +173,14 @@ define(function (require) {
             var inspiration = new inspirationModel();
             var inspirations = new inspirationCollection({models: inspiration});
 
-            /* Create the blog view */
-            var blog = new BlogView({el: $('.container'), collection: inspirations});
-            blog.render();
-            
-            
+            /* Fetch the data from the database */
+            inspirations.fetch().done(function(){
+
+                /* Create the blog view */
+                var blog = new BlogView({el: $('.container'), collection: inspirations});
+                blog.render();
+                
+            });            
         },
 
         faq: function() {
