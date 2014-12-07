@@ -91,6 +91,11 @@ h1.very-large-font {
 	bottom: -30vh;
 }
 
+.centered {
+	margin-right: auto;
+	margin-left: auto;
+}
+
 /****************** BACKGROUNDS ******************/
 
 .bckg-white {
@@ -204,6 +209,10 @@ h1.very-large-font {
 
 .width-100 {
 	width: 100%;
+}
+
+.width-80 {
+	width: 80%;
 }
 
 .width-50 {

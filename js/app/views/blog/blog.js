@@ -50,8 +50,8 @@ define(function (require) {
 
             /* Fill the modal with the information from this inspiration */
             var title = '<h4><strong>' + this.collection.get(inspirationID).get('title') + '</strong></h4>';
-            var media = '<img src="' + this.collection.get(inspirationID).get('media') +'" />';
-            var body = '<p>' + this.collection.get(inspirationID).get('body') +'</p>';
+            var media = '<img class="tiny-margin-top" src="' + this.collection.get(inspirationID).get('media') +'" />';
+            var body = '<div class="width-80 centered tiny-margin-top">' + this.collection.get(inspirationID).get('body') +'</div>';
 
             $('#modal-content').html(title + media + body);
             $('#inspirationModal').foundation('reveal', 'open');
