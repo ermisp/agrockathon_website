@@ -1,10 +1,19 @@
+<% 
+	/* Define a video regex to show the thumbnail if video (only youtube for now) is in media */
+	var videoRegEx = /(?:youtube\.com\/(?:[^\/]+\/.+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([^"&?\/ ]{11})/i; 
+%>
+
 <div class="small-6 large-4 text-center columns end single-inspiration" id="<%= inspiration.id %>">
 	<div class="row white-transparent">
 		<div class="small-12 small-centered text-center columns">
 			<h4><strong><%= inspiration.title %></strong><strong></h4>
 		</div>
 		<div class="small-10 small-centered text-center columns">
-			<img src="<%= inspiration.media %>" />
+			<% if (inspiration.media.match(videoRegEx)) { %>
+				<img src="http://img.youtube.com/vi/<%= inspiration.media.match(videoRegEx)[1] %>/hqdefault.jpg" />
+			<% } else { %>
+				<img src="<%= inspiration.media %>" />
+			<% } %>
 		</div>
 		<div class="small-10 small-centered text-left columns">
 			<p><%= inspiration.body.substr(0, 140) + '...' %></p>
