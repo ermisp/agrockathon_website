@@ -47,6 +47,10 @@ require.config({
             deps: ['vendor/jquery'],
             exports: 'Fastclick'
         },
+        'facebook-SDK': {
+            deps: [],
+            exports: 'Facebook'
+        },
     }
 });
 

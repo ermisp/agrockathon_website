@@ -248,6 +248,10 @@ h1.very-large-font {
 	margin-top: 3rem;
 }
 
+.small-margin-bottom {
+	margin-bottom: 3rem;
+}
+
 .vertical-center {
 	margin-top: 45vh; 
 }

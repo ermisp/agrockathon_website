@@ -4,6 +4,7 @@ define(function (require) {
         _                   = require('underscore'),
         Backbone            = require('backbone'),
         Foundation          = require('foundation'),
+        Facebook            = require('facebook-SDK'),
         SingleArticleView   = require('app/views/blog/single_article'),
         tpl                 = require('text!app/views/blog/blog.html'),
 
@@ -61,10 +62,14 @@ define(function (require) {
 
             /* Fill the modal with the information from this inspiration */
             var title = '<h4><strong>' + this.collection.get(inspirationID).get('title') + '</strong></h4>';
-            var body = '<div class="width-80 centered tiny-margin-top">' + this.collection.get(inspirationID).get('body').replace(urlCheck, '<a class="green" href="$&" target="_blank">$&</a>') +'</div>';
+            var body = '<div class="width-80 centered tiny-margin-top small-margin-bottom">' + this.collection.get(inspirationID).get('body').replace(urlCheck, '<a class="green" href="$&" target="_blank">$&</a>') +'</div>';
 
-            $('#modal-content').html(title + media + body);
+            /* Add the fb comments */
+            var comments = '<div class="fb-comments" data-href="http://agrockathon.eu/#blog/inspiration=' + inspirationID + '" data-width="100%" data-numposts="5" data-colorscheme="light"></div>';
+           
+            $('#modal-content').html(title + media + body + comments);
             $('#inspirationModal').foundation('reveal', 'open');
+            FB.XFBML.parse();
         },
     });
 
