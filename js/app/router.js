@@ -174,12 +174,14 @@ define(function (require) {
             var inspirations = new inspirationCollection({models: inspiration});
 
             /* Fetch the data from the database */
+            var that = this;
             inspirations.fetch().done(function(){
 
                 /* Create the blog view */
                 var blog = new BlogView({el: $('.container'), collection: inspirations});
                 blog.render();
-                
+
+                that.loadFoundation();                
             });            
         },
 

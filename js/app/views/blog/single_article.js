@@ -13,7 +13,6 @@ define(function (require) {
         render: function () {
             var data = {"inspiration": this.model.toJSON() };
             this.$el.append(template(data));
-            console.log(this.model);
             return this;
         }
     });
