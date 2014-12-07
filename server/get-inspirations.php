@@ -16,7 +16,13 @@
 		$database = "agrockatjq_db";
 
 		$pdo=new PDO('mysql:dbname='.$database.';host='.$servername,$username,$password);
-        $sql = "SELECT id, title, body, media FROM inspirations ORDER BY date DESC";
+
+		$sql =  'SET NAMES utf8; SET CHARACTER SET utf8';
+        
+        $statement=$pdo->prepare($sql);
+        $statement->execute();
+
+        $sql =  'SELECT id, title, body, media FROM inspirations ORDER BY date DESC';
         
         $statement=$pdo->prepare($sql);
         $statement->execute();

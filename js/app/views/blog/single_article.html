@@ -1,2 +1,13 @@
-
-<h1><%= inspiration.title %></h1>
+<div class="small-6 large-4 text-center columns end">
+	<div class="row white-transparent">
+		<div class="small-12 small-centered text-center columns">
+			<h4><strong><%= inspiration.title %></strong><strong></h4>
+		</div>
+		<div class="small-10 small-centered text-center columns">
+			<img src="<%= inspiration.media %>" />
+		</div>
+		<div class="small-10 small-centered text-left columns">
+			<p><%= inspiration.body.substr(0, 140) + '...' %></p>
+		</div>
+	</div>
+</div>

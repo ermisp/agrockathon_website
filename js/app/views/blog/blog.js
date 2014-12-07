@@ -23,6 +23,15 @@ define(function (require) {
                 singleInspiration.render();
             }
 
+            /* We have added elements in the 'inspiration' div so we need to recalculate it's height */
+            var height = 0;
+            $(".inspirations > *").each(function () {
+                height += $(this).height();
+            });
+
+            $('.inspirations').height(height + $('#blog-bckg').height());
+            $('#blog-bckg').addClass('bckg-image-farmers-white');
+
             return this;
         }
     });
