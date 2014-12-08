@@ -22,7 +22,7 @@
         $statement=$pdo->prepare($sql);
         $statement->execute();
 
-        $sql =  'SELECT id, title, body, media FROM inspirations ORDER BY date DESC';
+        $sql =  'SELECT id, title, body, media, date FROM inspirations ORDER BY date DESC';
         
         $statement=$pdo->prepare($sql);
         $statement->execute();
