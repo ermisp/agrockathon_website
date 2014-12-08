@@ -66,7 +66,7 @@ define(function (require) {
             var media = this.collection.get(inspirationID).get('media');
 
             if (media.match(videoRegEx)) {
-                 media = '<iframe class="tiny-margin-top" width="560" height="315" src="http://www.youtube.com/embed/' + media.match(videoRegEx)[1] + '?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>';
+                 media = '<iframe class="tiny-margin-top" width="100%" src="http://www.youtube.com/embed/' + media.match(videoRegEx)[1] + '?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>';
             } else {
                 media = '<img class="tiny-margin-top" src="' + media +'" />';
             }
@@ -76,7 +76,7 @@ define(function (require) {
             var body = '<div class="width-80 centered tiny-margin-top small-margin-bottom">' + this.collection.get(inspirationID).get('body').replace(urlCheck, '<a class="green" href="$&" target="_blank">$&</a>') +'</div>';
 
             /* Add the fb comments */
-            var comments = '<div class="fb-comments" data-href="http://agrockathon.eu/#blog/inspiration=' + inspirationID + '" data-width="100%" data-numposts="5" data-colorscheme="light"></div>';
+            var comments = '<div class="fb-comments" data-href="http://agrockathon.eu/#blog/inspiration=' + inspirationID + '" width="100%" data-width="100%" data-numposts="5" data-colorscheme="light"></div>';
            
             $('#modal-content').html(title + media + body + comments);
             $('#inspirationModal').foundation('reveal', 'open');

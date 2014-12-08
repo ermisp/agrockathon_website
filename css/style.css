@@ -248,6 +248,10 @@ h1.very-large-font {
 	margin-top: 3rem;
 }
 
+.medium-margin-top {
+	margin-top: 5rem;
+}
+
 .small-margin-bottom {
 	margin-bottom: 3rem;
 }
@@ -616,11 +620,23 @@ input[type="text"]:focus {
 	height: 70vh
 }
 
+.single-inspiration {
+	cursor: pointer;
+}
+
+.single-inspiration:hover {
+	opacity: 0.5;
+}
+
 /****************** MEDIA QUERIES ******************/
 @media only screen and (max-width: 40em) { 
 
 	html, body {
 		font-size: 10px;
+	}
+
+	p {
+		font-size: 1.3rem;
 	}
 
 	.row {
