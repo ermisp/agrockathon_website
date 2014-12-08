@@ -51,10 +51,14 @@ require.config({
             deps: [],
             exports: 'Facebook'
         },
+        'google-analytics': {
+            deps: [],
+            exports: 'GAanalytics'
+        },
     }
 });
 
-require(['vendor/jquery', 'backbone', 'app/router'], function ($, Backbone, Router) {
+require(['vendor/jquery', 'backbone', 'app/router', 'google-analytics'], function ($, Backbone, Router) {
     router = new Router();
     Backbone.history.start();
 });
