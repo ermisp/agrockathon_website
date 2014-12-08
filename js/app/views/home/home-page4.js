@@ -22,6 +22,9 @@ define(function (require) {
         },
 
         triggerAnimation: function() {
+            if ($("#trigger-annimation").length == 0)
+                return;
+
             var scrollPos = $(window).scrollTop();
             var sectionPos = $("#trigger-annimation").position().top;
 

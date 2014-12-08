@@ -24,7 +24,6 @@ define(function (require) {
 
 
             /* Check if we're on desktop or tablet */
-            console.log($(".bckg-ermis-george").css("color"));
             if ($(".bckg-ermis-george").css("color") == 'rgb(255, 0, 0)') {
                 $(".leave-george-margin").css('padding-top', 0.8*ermisHeight);
                 var totalHeight = 1.5*ermisHeight + georgeHeight;
