@@ -14,10 +14,10 @@ define(function (require) {
     return Backbone.View.extend({
 
         events: {
-            'click .single-inspiration': 'revealModal'
+            'click .single-inspiration': 'renderInspiration'
         },
 
-        render: function () {
+        render: function (inspirationID) {
 
             var inspirations = [];
 
@@ -37,14 +37,25 @@ define(function (require) {
             $('.inspirations').height(height + $('#blog-bckg').height());
             $('#blog-bckg').addClass('bckg-image-farmers-white');
 
+            if (inspirationID) {
+                this.revealModal(inspirationID);
+            }
+
             return this;
         },
 
-        revealModal: function(e) {
+        renderInspiration: function(e) {
             e.stopPropagation();
 
-            /* Get the id of the post being clicked */
+            /* Get the id of the inspiration being clicked */
             var inspirationID = $(e.target).parent().closest('.single-inspiration').attr('id');
+
+            /* Navigate to the corresponding inspiration */
+            router.navigate("blog/" + inspirationID, {trigger: true});
+        },
+
+        revealModal: function(inspirationID) {
+            
 
             /* Define a regular expression to find links within the text & replace them with hyperlinks */
             var urlCheck = /\b(([\w-]+:\/\/?|www[.])[^\s()<>]+(?:\([\w\d]+\)|([^[:punct:]\s]|\/)))/m;

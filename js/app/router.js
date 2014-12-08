@@ -28,15 +28,16 @@ define(function (require) {
         whatPage1View    = require('app/views/hackathon/what-page1'),
 
         /* About Views */
-        AboutPage1View    = require('app/views/about/about-page1');
-        AboutPage2View    = require('app/views/about/about-page2');
+        AboutPage1View    = require('app/views/about/about-page1'),
+        AboutPage2View    = require('app/views/about/about-page2'),
 
         /* Blog View */
-        BlogView    = require('app/views/blog/blog');
+        BlogView    = require('app/views/blog/blog'),
 
         /* Blog Collection */
-        inspirationModel    = require('app/inspiration-model');
+        inspirationModel    = require('app/inspiration-model'),
         inspirationCollection = require('app/inspiration-collection');
+
 
     header.render();
 
@@ -48,6 +49,7 @@ define(function (require) {
             "event": "eventPage",
             "participate": "participate",
             "faq": "faq",
+            "blog/:id":"inspiration",
             "blog":"blog",
             "what":"what"
         },
@@ -180,6 +182,35 @@ define(function (require) {
 
                 that.loadFoundation();                
             });            
+        },
+
+        inspiration: function(id) {
+            /* Empty the page */
+            $('.container').html('');
+
+            /* Scroll to the top */
+            window.scrollTo(0, 0);
+
+            /* Set the correct active element in the menu */
+            header.setActive();
+
+            /* We need to get the id of the inspiration. */
+            var inspirationID = id;
+
+            /* Know initiate the blog view by showing the corresponding inspiration */
+            var inspiration = new inspirationModel();
+            var inspirations = new inspirationCollection({models: inspiration});
+
+            /* Fetch the data from the database */
+            var that = this;
+            inspirations.fetch().done(function(){
+
+                /* Create the blog view */
+                var blog = new BlogView({el: $('.container'), collection: inspirations});
+                blog.render(inspirationID);
+
+                that.loadFoundation();                
+            });       
         },
 
         faq: function() {
