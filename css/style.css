@@ -622,6 +622,7 @@ input[type="text"]:focus {
 
 .single-inspiration {
 	cursor: pointer;
+	margin-top: 1rem;
 }
 
 .single-inspiration:hover {
