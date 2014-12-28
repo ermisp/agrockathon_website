@@ -628,6 +628,20 @@ input[type="text"]:focus {
 	opacity: 0.5;
 }
 
+.inspiration-title {
+	height: 4rem;
+}
+
+.inspiration-image {
+	height: 14rem;
+}
+
+.inspiration-text {
+	height: 6rem;
+}
+
+
+
 /****************** MEDIA QUERIES ******************/
 @media only screen and (max-width: 40em) { 
 

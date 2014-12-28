@@ -23,10 +23,14 @@ define(function (require) {
 
             this.$el.append(template());
 
-            for (var i = 0; i < this.collection.length; i++) {
+            for (var i = 0; i < this.collection.length - 1; i++) {
                 inspirations[i] = new SingleArticleView({el: $('.inspirations'), model: this.collection.models[i]});
-                inspirations[i].render();
+                inspirations[i].render(false);
             }
+
+            /* Create the last inspiration */
+            inspirations[this.collection.length - 1] = new SingleArticleView({el: $('.inspirations'), model: this.collection.models[this.collection.length - 1]});
+            inspirations[this.collection.length - 1].render(true);
 
             /* We have added elements in the 'inspiration' div so we need to recalculate it's height */
             var height = 0;

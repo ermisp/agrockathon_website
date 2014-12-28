@@ -10,9 +10,18 @@ define(function (require) {
 
     return Backbone.View.extend({
 
-        render: function () {
-            var data = {"inspiration": this.model.toJSON() };
-            this.$el.append(template(data));
+        render: function (finalInspiration) {
+            var data = {
+                "inspiration": this.model.toJSON(),
+                "final": "", 
+            };
+
+            if (!finalInspiration) {
+                this.$el.append(template(data));
+            } else {
+                data.final = "end";
+                this.$el.append(template(data));
+            }
             return this;
         }
     });
