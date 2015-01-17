@@ -70,7 +70,7 @@ define(function (require) {
             var media = this.collection.get(inspirationID).get('media');
 
             if (media.match(videoRegEx)) {
-                 media = '<iframe class="tiny-margin-top" width="100%" src="http://www.youtube.com/embed/' + media.match(videoRegEx)[1] + '?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>';
+                 media = '<iframe class="tiny-margin-top" width="100%" height="400px" src="http://www.youtube.com/embed/' + media.match(videoRegEx)[1] + '?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>';
             } else {
                 media = '<img class="tiny-margin-top" src="' + media +'" />';
             }
