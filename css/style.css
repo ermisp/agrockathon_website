@@ -628,6 +628,22 @@ input[type="text"]:focus {
 	opacity: 0.5;
 }
 
+#ermis {
+	line-height: 0.8em;
+	margin-top: 1em;
+}
+
+#george {
+	line-height: 0.8em;
+	margin-top: 1em;
+}
+
+label i {
+	width: 10em;
+	display: block;
+	padding-left: 1em;
+}
+
 /****************** MEDIA QUERIES ******************/
 @media only screen and (max-width: 40em) { 
 

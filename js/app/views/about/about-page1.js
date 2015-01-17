@@ -42,7 +42,7 @@ define(function (require) {
             var onRecord = $("#ermis-cv-btn").is(":checked");
 
             if (onRecord) {
-                $('#ermis-cv-label').html('On-Record');
+                $('#ermis-cv-label').html('<i>on-Record</i>');
                 $('#ermis').addClass('black');
                 $('.ermis-social').addClass('black');
 
@@ -59,7 +59,7 @@ define(function (require) {
                 });
 
             } else {
-                $('#ermis-cv-label').html('Off-Record');
+                $('#ermis-cv-label').html('<i>off-Record</i>');
                 $('#ermis').removeClass('black');
                 $('.ermis-social').removeClass('black');
 
@@ -82,7 +82,7 @@ define(function (require) {
             var onRecord = $("#george-cv-btn").is(":checked");
 
             if (onRecord) {
-                $('#george-cv-label').html('On-Record');
+                $('#george-cv-label').html('<i>on-Record</i>');
                 $('#george').addClass('black');
                 $('.george-social').addClass('black');
 
@@ -99,7 +99,7 @@ define(function (require) {
                 });
 
             } else {
-                $('#george-cv-label').html('Off-Record');
+                $('#george-cv-label').html('<i>off-Record</i>');
                 $('#george').removeClass('black');
                 $('.george-social').removeClass('black');
 
