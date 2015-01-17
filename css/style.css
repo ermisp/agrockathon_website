@@ -235,6 +235,10 @@ h1.very-large-font {
 	height: 40%;
 }
 
+.height-20 {
+	height: 15%;
+}
+
 .zero-margin-top {
 	margin-top: 0rem;
 	padding-top: 0;
@@ -305,6 +309,10 @@ h1.very-large-font {
 
 a.green {
 	color: #798a1d;
+}
+
+.small-text {
+	font-size: 0.8em;
 }
 
 /****************** BORDERS ******************/
