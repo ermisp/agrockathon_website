@@ -4,6 +4,7 @@ define(function (require) {
         _                   = require('underscore'),
         Backbone            = require('backbone'),
         Foundation          = require('foundation'),
+        FoundationAcc       = require('foundationSrc/foundation.accordion'),
         tpl                 = require('text!app/views/hackathon/what-page1.html'),
 
         template = _.template(tpl);
