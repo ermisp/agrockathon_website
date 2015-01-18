@@ -14,6 +14,12 @@ define(function (require) {
         render: function () {
             this.$el.append(template());
             return this;
+
+            $(".accordion").on("click", "dd", function (event) {
+                $("dd.active").find(".content").slideToggle("slow");
+                $(this).find(".content").slideToggle("slow");
+            });
+
         }
 
     });
