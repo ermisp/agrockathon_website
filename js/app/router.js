@@ -91,6 +91,8 @@ define(function (require) {
             /* Load the sections */
             var whatPage1 = new whatPage1View({el: $('.container')});
             whatPage1.render();
+
+            this.loadFoundation();
         },
 
         about: function() {
