@@ -608,6 +608,8 @@ input[type="text"]:focus {
 	font-size: 1rem;
 }
 
+#top-bar-item-blog {color: yellow;}
+
 .switch.round label { 
 	color: #fffff1;
 }
