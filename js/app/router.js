@@ -21,7 +21,8 @@ define(function (require) {
         eventPage5View    = require('app/views/event/event-page5'),
 
         /* Load the participate sections */
-        participatePage1View    = require('app/views/participate/participate-page1')
+        participatePage1View    = require('app/views/participate/participate-page1'),
+        participatePage2View    = require('app/views/participate/participate-page2'),
 
         /* Load the what sections */
         whatPage1View    = require('app/views/hackathon/what-page1'),
