@@ -21,8 +21,7 @@ define(function (require) {
         eventPage5View    = require('app/views/event/event-page5'),
 
         /* Load the participate sections */
-        participatePage1View    = require('app/views/participate/participate-page1'),
-        participatePage2View    = require('app/views/participate/participate-page2'),
+        participatePage1View    = require('app/views/participate/participate-page1')
 
         /* Load the what sections */
         whatPage1View    = require('app/views/hackathon/what-page1'),
@@ -152,10 +151,7 @@ define(function (require) {
 
             /* Load the participate page sections */
             var participatePage1 = new participatePage1View({el: $('.container')});
-            var participatePage2 = new participatePage2View({el: $('.container')});
-
             participatePage1.render();
-            participatePage2.render();
 
             this.loadFoundation();
         },
