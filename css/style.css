@@ -608,7 +608,9 @@ input[type="text"]:focus {
 	font-size: 1rem;
 }
 
-#top-bar-item-blog {color: yellow;}
+#top-bar-item-blog {
+	background-color: #bc5106;
+}
 
 .switch.round label { 
 	color: #fffff1;
