@@ -11,32 +11,11 @@ define(function (require) {
     return Backbone.View.extend({
 
         initialize: function() {
-            _.bindAll(this, 'triggerAnimation');
-
-            $(window).scroll(this.triggerAnimation);
         },
 
         render: function () {
             this.$el.append(template());
             return this;
-        },
-
-        triggerAnimation: function() {
-
-            if ($("#animation-element-1-trigger").length == 0) 
-                return;
-
-            var scrollPos = $(window).scrollTop();
-            var sectionPos = $("#animation-element-1-trigger").position().top;
-
-            var hasReached = (scrollPos + $(window).height() >= sectionPos);
-            var animationEnd = $("#animation-element-1").hasClass("animation-fade-up");
-
-            if ((hasReached) && (!animationEnd)) {
-                $("#animation-element-1-trigger").addClass("animation-fade-up");
-            }
         }
-
     });
-
 });
